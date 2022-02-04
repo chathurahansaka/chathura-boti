@@ -40,22 +40,22 @@ Bot By @SDBotsz."""
 
 REPLY_MARKUP = InlineKeyboardMarkup(
     [[
-    InlineKeyboardButton('📣 Channel', url = 'https://t.me/SDBots_Inifinity'),
-    InlineKeyboardButton('👥 Support', url = 'https://t.me/SDBotz')
+    InlineKeyboardButton('📣 Channel', url = 'https://t.me/Mayawee_bot_help'),
+    InlineKeyboardButton('👥 Support', url = 'https://t.me/Mayawee_bot_help')
     ]]
 )
-JOIN_ASAP = f"❌** Access Denied ❌**\n\n🙋‍♂️ Hey There , You Must Join @SDBots_Inifinity Telegram Channel To Use This BOT. So, Please Join it & Try Again🤗. Thank You 🤝"
+JOIN_ASAP = f"❌** Access Denied ❌**\n\n🙋‍♂️ Hey There , You Must Join @Mayawee_bot_help Telegram Channel To Use This BOT. So, Please Join it & Try Again🤗. Thank You 🤝"
 
 FSUBB = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="👨🏻‍💻 Bot Updates", url=f"https://t.me/SDBots_Inifinity") 
+        InlineKeyboardButton(text="👨🏻‍💻 Bot Updates", url=f"https://t.me/Mayawee_bot_help") 
         ]]
 )
 DB_CHANNEL = "-1001511610738"
 @SDBotz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     try:
-        await message._client.get_chat_member(int("-1001475839216"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001696429911"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
